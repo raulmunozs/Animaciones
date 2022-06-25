@@ -8,11 +8,11 @@
      <!-- CSS only -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./Estilos CSS/style.css">
+    <link rel="stylesheet" href="./Estilos CSS/bootstrap.css">
 </head>
-<body class="contenedor">
+<body class="container-fluid">
     <!--Fila del logo + nav-->
-    <header class="header">
+    <!--<header class="header">
         <div class="container">
              <a href="Index.html" class="logo" data-aos="fade-right">
             <img src="./Banco de Imagenes/Habitos-para-se-LOGO-Tipografia-clara_02 (1).png"  alt="logo de la compañia" class="logo-imag">
@@ -22,40 +22,98 @@
                 <li><a href="./Paguinas/Nosotros.html">Nosotros</a></li>
                 <li><a href="./Paguinas/Blog.html">Blog</a></li>
                 <li><a href="./Paguinas/Cursos.html">Cursos</a></li>
-                <li><a href="./Paguinas/Contacto.html"></a></li>
+                <li><a href="./Paguinas/Contacto.html">Contacto</a></li>
             </ul>
         </div>
+    </header>-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container">
+                <a class="navbar-brand" href="Index.html"><img src="./Banco de Imagenes/Habitos-para-se-LOGO-Tipografia-clara_02 (1).png"  alt="logo de la compañia" class="logo-imag"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Paguinas/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Paguinas/Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Paguinas/Cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Paguinas/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!--Cierre de Fila del logo + nav-->
     <!--Inicia contenido de la pag-->
-    <main class="main">
-                <section id="Presentacion">
-                    <div class="container">
-                        <h1 class="portada">Descubre y desarrolla la<br>mejor versión de ti</h1>
-                        <h4>Si quieres empezar a realizar los cambios necesarios <br> para ser una persona mas productiva, abundante y exitosa <br> ¡Estas en el camino!</h4>
-                        <div id="containerButton">
-                            <form action="./Paguinas/Contacto.html">
-                                <button>Recibe todos los recursos aqui</button>
+    <main class="container">
+                <section id="Presentacion" class="container pb-3">
+                    <div class="container align-item-center py-4">
+                        <h1 class="col-12 text-center ">Descubre y desarrolla la<br>mejor versión de ti</h1>
+                        <h4 class="col-12 text-center">Si quieres empezar a realizar los cambios necesarios <br> para ser una persona mas productiva, abundante y exitosa <br> ¡Estas en el camino!</h4>
+                        <div id="containerButton" class="text-center ">
+                            <form action="./Paguinas/Contacto.html" class="my-5">
+                                <button class="col-6">Recibe todos los recursos aqui</button>
                             </form>
                         </div>
                     </div>
                 </section>
-                <section id="Nosotros">
+                <section id="Nosotros" class="container my-5">
                     <h2 data-aos="fade-up"
-                    data-aos-duration="3000">Sobre Nosotros</h2>
-                    <div class="container">
-                        <div class="texto">
-                            
+                    data-aos-duration="3000" class="col-12 justify-content-start py-5">Sobre Nosotros</h2>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-4 col-12 col-md-4 col-sm-12 col-lg-4 texto-justify">
                             <p>Hábitos para ser, somos un equipo que busca contribuir en la formación de Hábitos para Crear Personas Altamente Eficaces que logren alcanzar sus metas personales siendo estas sociales, financieras o laborales. Con este objetivo, contamos con formación totalmente a distancia bajo una metodología Innovadora con especial foco en la Práctica</p>
                         </div>
-                            <div class="imag-container"></div>
-                        <div class="texto">
-                            <p>Nuestra oferta de clase mundial incluye la recomendación de una variedad de cursos intensivos para que te capacites en habilidades enfocadas en el Crecimiento Personal y Emprendimiento Digital.</p>
-                            <p>En Hábitos para ser también contamos con contenidos diseñados para capacitar y dar a conocer la importancia de los Hábitos en la Vida Cotidiana.</p>
+                        <div class="imag-fluid col-12 col-md-4 col-sm-12 col-lg-4 justify-content-center"><img src="./Banco de Imagenes/Nosotros computador.jpg" alt=""></div>
+                        <div class="col-12 col-md-4 col-sm-12 col-lg-4texto-justify">
+                            <p class="texto-justify">Nuestra oferta de clase mundial incluye la recomendación de una variedad de cursos intensivos para que te capacites en habilidades enfocadas en el Crecimiento Personal y Emprendimiento Digital.</p>
+                            <p class="texto-justify">En Hábitos para ser también contamos con contenidos diseñados para capacitar y dar a conocer la importancia de los Hábitos en la Vida Cotidiana.</p>
                         </div>
+                    </div>
                 </section>
-                <section id="blog">
-                    <div class="container">
+                <section id="blog" class="container py-2">
+                    <h2 data-aos="fade-up" data-aos-duration="3000">Blog</h2>
+                    <div class="row justify-content-around mt-5">
+                      <div class="card col-4 mb-3" style="width: 18rem;">
+                        <img src="./Banco de Imagenes/pexels-ovan-57750 .jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">¿Cómo Organizarme Mejor y Aprovechar Mi Tiempo?</h5>
+                          <p class="card-text">No tienes idea de cuántas veces he pensado “¡No me da tiempo a nada!”. <br>Tener la sensación de ir siempre con prisas, de no dar abasto, estar muy ocupado, con muchos compromisos tanto...</p>
+                          <a href="#" class="btn btn-primary">Leer+</a>
+                        </div>
+                      </div>
+                      <div class="card col-4 mb-3" style="width: 18rem;">
+                        <img src="./Banco de Imagenes/ENTRADA01-6921023.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">¿Qué son los hábitos y cómo se crean?</h5>
+                          <p class="card-text">Hace un tiempo atrás leí un libro muy bueno llamado “El poder de los hábitos” escrito por Charles Duhigg, en él explicaba de manera sencilla a través de historias y ejemplos prácticos el cómo funcionan los hábitos...</p>
+                          <a href="#" class="btn btn-primary">Leer+</a>
+                        </div>
+                      </div>
+                      <div class="card col-4 mb-3" style="width: 18rem;">
+                        <img src="./Banco de Imagenes/Habito-de-escribir-productividad-y-orgnizacion-768x514-7957481.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Método Journaling: ¿Qué es y para qué sirve?</h5>
+                          <p class="card-text">Constantemente estamos expuestos al estrés y la ansiedad lo que hace que en ocasiones tomemos decisiones equivocadas. Es importante sentirse bien para poder progresar de forma profesional y personal...</p>
+                          <a href="#" class="btn btn-primary">Leer+</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--<div class="container">
                         <h2 data-aos="fade-up"
                         data-aos-duration="3000">Blog</h2>
                             <div class="contenido">
@@ -75,10 +133,38 @@
                                     <button class="articulo">Leer+</button>
                                 </div>
                             </div>
+                    </div>-->
+                </section>
+                <section id="cursos" class="container py-2">
+                    <h2 data-aos="fade-up" data-aos-duration="3000">Cursos</h2>
+                    <div class="row justify-content-around mt-5">
+                    <div class="card col-4 mb-3" style="width: 18rem;">
+                        <img src="./Banco de Imagenes/pexels-natasha-fernandez-811572.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                          <h5 class="card-title">Bullet Journal</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ir al curso</a>
+                        </div>
+                      </div>
+                      <div class="card col-4 mb-3" style="width: 18rem;">
+                        <img src="./Banco de Imagenes/pexels-christina-morillo-1181595.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lectura Agil</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Ir al curso</a>
+                        </div>
+                      </div>
+                      <div class="card col-4 mb-3" style="width: 18rem;">
+                        <img src="./Banco de Imagenes/pexels-pixabay-209224.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Economia para emprebdedores</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary ">Ir al curso</a>
+                        </div>
+                      </div>
                     </div>
                 </section>
-                <section id="cursos">
-                    <div class="container">
+                    <!--<div class="container">
                         <h2 data-aos="fade-up"
                         data-aos-duration="3000">Cursos</h2>
                         <div class="containerCurso">
@@ -95,10 +181,49 @@
                                 <p>Este se comprende por varios bloques: Plan de ventas previsional. Presupuesto de gastos previsional. Plan de inversiones y financiación previsional.</p>
                             </div>
                         </div>    
+                    </div>-->
+                <section id="Contacto" class="container">
+                    <div class="row justify-content-around pt-5">
+                    <form action="" method="get" class="col-12 col-sm-4 ">
+                        <h3 class="mb-3">Subscribete a nuestro NewsLetter</h3>
+                        <p class="mb-3">Y recibe de primera mano tips, consejos y artículos de Alto Valor que te Ayudarán para Crear Hábitos para que cumplas tus metas y te conviertas en la Mejor Versión de Ti</p>
+                        <div class="mb-3 ">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Nunca compatiremos su correo electronico con nadie más.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputText1" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="exampleInputText1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Acepto los terminos</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                    <div class="col-6 col-md-4">
+                        <ul>
+                            <li><a href="Index.html">Home</a></li>                        
+                            <li><a href="./Paguinas/Nosotros.html">Nosotros</a></li>
+                            <li><a href="./Paguinas/Blog.html">Blog</a></li>
+                            <li><a href="./Paguinas/Cursos.html">Cursos</a></li>
+                            <li><a href="./Paguinas/Contacto.html">Contacto</a></li>
+                        </ul>
                     </div>
+                    <div class="col-6 col-md-4">
+                        <h4>Redes sociales</h4>
+                        <div class="miniLogos">
+                            <ul class="flex">
+                                <li><a href=""><img class="facebook" src="./RRSS/icons8-facebook-30.png" alt=""></a></li>                        
+                                <li><a href=""><img class="instagram" src="./RRSS/icons8-instagram-24.png" alt=""></a></li>  
+                                <li><a href=""><img class="youtube" src="./RRSS/icons8-youtube-play-32.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 </section>
-                <section id="Contacto">
-                    <div class="container">
+                    <!--<div class="container">
                         <div class="formulario">
                             <form action="" method="get">
                                 <h3>Subscribete a nuestro NewsLetter</h3>
@@ -127,12 +252,11 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </div>-->
     </main>
     <!--Fin contenido de la pag-->
-    <footer class="footer"> 
-        <div class="container">© All rights reserved Hábitos Para Ser
+    <footer class="footer py-5 col-12"> 
+        <div class="container col-12 text-center align-item-center">© All rights reserved Hábitos Para Ser
         </div>    
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
