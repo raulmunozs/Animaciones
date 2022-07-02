@@ -1,32 +1,35 @@
+$colorLetraGeneral: #FFFFFF;
+$colorFondos: rgba(33, 25, 21, 0.85);
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 footer{
-    background-color:  rgba(33, 25, 21, 0.85);
-color:#FFFFFF;
+    background-color:  $colorFondos;
+color:$colorLetraGeneral;
 }
 /*Inicia header*/
 html{
     scroll-behavior: smooth;
 }
 header{
-    background-color: rgba(33, 25, 21, 0.85);
+    background-color:$colorFondos;
         
 }
 div .color{
-    background-color:  rgba(33, 25, 21, 0.85);
-    color:#FFFFFF;
+    background-color:  $colorFondos;
+    color:$colorLetraGeneral;
 }
 button.navbar-toggler{
-    background-color: #FFFFFF;
+    background-color: $colorLetraGeneral;
 }
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
-    color: #FFFFFF;
+    color: $colorLetraGeneral;
 }
 a.nav-link{
-    color: #FFFFFF;
+    color: $colorLetraGeneral;
 
 }
 a:hover{
@@ -36,7 +39,7 @@ a:hover{
 /*Inicia main*/
 a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: $colorLetraGeneral;
 }
 /*inicia prsentacion*/
 
@@ -51,7 +54,7 @@ button{
     font-size: 24px;
     border-radius: 30px;
     background-color: rgba(219, 111, 29, 0.95);
-    color:#FFFFFF;
+    color:$colorLetraGeneral;
 }
 
 #Presentacion{
@@ -66,12 +69,12 @@ button{
     background-position: center center;
 }
 h1{
-    color: #FFFFFF;
+    color: $colorLetraGeneral;
     font-family:black italic;
 }
 h4.col-12.text-center{
-    background-color: rgba(33, 25, 21, 0.85);
-    color:#FFFFFF;
+    background-color: $colorFondos;
+    color:$colorLetraGeneral;
     border-radius: 30px;
 }
 /*finaliza prsentacion*/
@@ -81,6 +84,7 @@ img{
     width: 100%;
     
 }
+
 div .container .col-4 .col-sm-4 .col-md-4 .col-lg-4 .align-items-center .justify-content-center .my-2{
     display: flex;
     flex-direction: column;
@@ -168,18 +172,22 @@ form.col-12 .col-sm-4 {
 h4{
     color: #FFFFFF;
 }
+/*Inicio Anidado*/
 ul.flex{
     display: flex;
     flex-direction: row;
+        li{
+        padding: 5px;
+        }
 }
-ul.flex li{
-    padding: 5px;
-}
+/*Fin Anidado*/
 /*Fin Contacto*/
 
-@media screen (max-width: 992px){
+@media (max-width: 992px) {
     div.img-fluid{
-        height: 200px;
-    }
+        height: 90%;
+        align-items: center;}
+    
+    
     
 }
